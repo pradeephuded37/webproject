@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log in</title>
+    <link href="log in.css" rel="stylesheet">
+</head>
+<script>
+    function valid(){
+        var pass = document.getElementById("pw").value;
+        var reg = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+        if (!pass.match(reg)){
+            alert("7 to 15 char consists of atleast 1 num 1 spl ");
+            return false;
+        }
+        else{
+            alert("password accepted");
+            return true;
+        }
+    }
+</Script>
+<body>
+
+<form action="login success.html" onsubmit="return valid()">
+
+    <h1>Log in</h1>
+
+    Username : <input type="text" value="" placeholder="enter username" required>
+    <p></p>
+    password : <input type="password" placeholder="enter password" required id="pw"><br>
+    <p></p>
+    <input type="submit">   
+
+</form>
+
+</body>
+</html>

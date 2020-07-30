@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+    <link href="sign up.css" rel="stylesheet">
+</head>
+<script>
+    function valid(){
+        var pass = document.getElementById("pw").value;
+        var cpass = document.getElementById("cpw").value;
+        if (pass==cpass){
+            alert("password accepted");
+            return true;
+        }
+        else{
+            alert("password not matched");
+            return false;
+        }
+    }
+    
+</Script>
+<body>
+
+
+<form action="signupdone.html" onsubmit="return valid()">
+
+    <h1>SIGN UP </h1>
+
+    First name : <input type="text" value="" placeholder="enter First name " required>
+    <p></p>
+    Last name : <input type="text" value="" placeholder="enter last name" required>
+    <p></p>
+    Username : <input type="text" value="" placeholder="enter username" required >
+    <p></p>
+    password : <input type="password" placeholder="enter password" required id="pw"><br>
+    <p></p>
+    confirm password : <input type="password" placeholder="enter password" required id="cpw"><br>
+    <p></p>
+
+    Email : <input type="email" placeholder="enter email id" required>
+    <p></p>
+    Phone no : <input type="number" placeholder="enter phone number" required>
+    <p></p>
+
+    <input type="submit"> 
+
+</form>
+</body>
+</html>

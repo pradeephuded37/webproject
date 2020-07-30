@@ -1,0 +1,31 @@
+body{
+        border-style:solid;
+        border-width:10px;
+        border-color:green;
+        border-radius:20px ;
+        border-bottom-style:duble;
+
+        background-color: grey;
+        background-image: url("bg for products.jpg");
+
+        padding-bottom:10px;
+        padding-left:50px;
+        padding-right:150px;
+
+        margin-top:200px;
+        margin-bottom:200px;
+        margin-left:400px;
+        margin-right:350px;
+        }
+
+a:hover{
+background:orange;
+color:black;
+border-radius:10px;
+}
+
+
+
+
+
+
